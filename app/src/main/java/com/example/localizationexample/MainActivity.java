@@ -21,6 +21,8 @@ TextView tvResult;
         btnEN=findViewById(R.id.btnEN);
         btnMMZ=findViewById(R.id.btnMMZ);
         tvResult=findViewById(R.id.tvResult);
+        tvResult.setText(getResources().getString(R.string.greeting));
+        getSupportActionBar().setTitle(R.string.app_name);
 
 
 
@@ -38,7 +40,9 @@ TextView tvResult;
                         config,
                         getResources().getDisplayMetrics()
                 );
+
                 recreate();
+                invalidateOptionsMenu();
             }
         });
 
@@ -57,6 +61,8 @@ TextView tvResult;
                         getResources().getDisplayMetrics()
                 );
                 recreate();
+                invalidateOptionsMenu();
+
             }
         });
 
@@ -75,6 +81,8 @@ TextView tvResult;
                         getResources().getDisplayMetrics()
                 );
                 recreate();
+                invalidateOptionsMenu();
+
             }
         });
 
